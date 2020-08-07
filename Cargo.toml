@@ -1,0 +1,20 @@
+[package]
+name = "enum_const_value"
+version = "0.1.0"
+authors = ["Jasper Visser <jasperav@hotmail.com>"]
+edition = "2018"
+description = "Providing const values for enums with associated types. Each variant gets a unique sequential value."
+readme = "README.md"
+keywords = ["const value enum"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/jasperav/enum_const_value"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "1.0.*", features = ["full", "extra-traits"] }
+quote = "1.0.*"
+proc-macro2 = "1.0.*"
