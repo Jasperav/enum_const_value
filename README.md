@@ -1,6 +1,7 @@
 # Enum const value
 
 [![Latest Version](https://img.shields.io/crates/v/enum_const_value.svg)](https://crates.io/crates/enum_const_value)
+[![Build Status](https://img.shields.io/github/workflow/status/jasperav/enum_const_value/CI/master)](https://github.com/jasperav/enum_const_value/actions)
 
 A derive macro that will add const values for enum cases, even enums with associated types.
 It creates a new enum with the const values.
@@ -42,7 +43,6 @@ fn test_my_enum() {
 ## TODO
 - Custom enum case values (can be done by adding attributes)
 - Custom derived enum name (is currently always $ENUMNAME$ConstValue)
-- CI (github actions?)
 
 #### License
 
