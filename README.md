@@ -39,7 +39,7 @@ fn test_my_enum() {
 }
 ```
 
-##TODO
+## TODO
 - Custom enum case values (can be done by adding attributes)
 - Custom derived enum name (is currently always $ENUMNAME$ConstValue)
 - CI (github actions?)
