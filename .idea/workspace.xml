@@ -13,7 +13,9 @@
     <cargoProject FILE="$PROJECT_DIR$/example/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de2b5876-14f4-42da-9aae-997491410b6e" name="Default Changelist" comment="" />
+    <list default="true" id="de2b5876-14f4-42da-9aae-997491410b6e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,36 +61,10 @@
     </key>
   </component>
   <component name="RunManager" selected="Cargo Command.Test lib::test">
-    <configuration name="Expand example [example]" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="expand --lib --color=always --theme=GitHub --tests" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/example" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test lib::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package example --lib test" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/example" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Cargo Command.Test lib::test" />
-        <item itemvalue="Cargo Command.Expand example [example]" />
-      </list>
-    </recent_temporary>
+    <list>
+      <item itemvalue="Cargo Command.Expand example [example]" />
+      <item itemvalue="Cargo Command.Test lib::test" />
+    </list>
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
@@ -103,7 +79,8 @@
       <option name="presentableId" value="Default" />
       <updated>1596740794909</updated>
       <workItem from="1596740796510" duration="1379000" />
-      <workItem from="1596742958475" duration="3132000" />
+      <workItem from="1596742958475" duration="3697000" />
+      <workItem from="1596797754678" duration="25000" />
     </task>
     <servers />
   </component>
@@ -111,22 +88,26 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1281" height="625" key="GridCell.Tab.0.bottom" timestamp="1596742924857">
+    <state x="414" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596797779246">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1281" height="625" key="GridCell.Tab.0.bottom/-1920.0.1280.693/0.0.1920.1160@0.0.1920.1160" timestamp="1596742924857" />
-    <state width="1281" height="625" key="GridCell.Tab.0.center" timestamp="1596742924856">
+    <state x="414" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1280.693/0.0.1920.1160@0.0.1920.1160" timestamp="1596797779246" />
+    <state width="1921" height="1104" key="GridCell.Tab.0.bottom" timestamp="1596797660984">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1281" height="625" key="GridCell.Tab.0.center/-1920.0.1280.693/0.0.1920.1160@0.0.1920.1160" timestamp="1596742924856" />
-    <state width="1281" height="625" key="GridCell.Tab.0.left" timestamp="1596742924856">
+    <state width="1921" height="1104" key="GridCell.Tab.0.bottom/-1920.0.1280.693/0.0.1920.1160@0.0.1920.1160" timestamp="1596797660984" />
+    <state width="1921" height="1104" key="GridCell.Tab.0.center" timestamp="1596797660984">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1281" height="625" key="GridCell.Tab.0.left/-1920.0.1280.693/0.0.1920.1160@0.0.1920.1160" timestamp="1596742924856" />
-    <state width="1281" height="625" key="GridCell.Tab.0.right" timestamp="1596742924857">
+    <state width="1921" height="1104" key="GridCell.Tab.0.center/-1920.0.1280.693/0.0.1920.1160@0.0.1920.1160" timestamp="1596797660984" />
+    <state width="1921" height="1104" key="GridCell.Tab.0.left" timestamp="1596797660984">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1281" height="625" key="GridCell.Tab.0.right/-1920.0.1280.693/0.0.1920.1160@0.0.1920.1160" timestamp="1596742924857" />
+    <state width="1921" height="1104" key="GridCell.Tab.0.left/-1920.0.1280.693/0.0.1920.1160@0.0.1920.1160" timestamp="1596797660984" />
+    <state width="1921" height="1104" key="GridCell.Tab.0.right" timestamp="1596797660984">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1921" height="1104" key="GridCell.Tab.0.right/-1920.0.1280.693/0.0.1920.1160@0.0.1920.1160" timestamp="1596797660984" />
     <state x="667" y="313" width="585" height="592" key="find.popup" timestamp="1596797094152">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
