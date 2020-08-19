@@ -4,7 +4,7 @@
 [![Build Status](https://img.shields.io/github/workflow/status/jasperav/enum_const_value/CI/master)](https://github.com/jasperav/enum_const_value/actions)
 
 A derive macro that will add const values for enum cases, even enums with associated types.
-It creates a new enum with the const values.
+When dealing with an enum with associated types, the macro creates a new enum with the const values.
 
 ## Usage
 
