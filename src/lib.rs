@@ -19,10 +19,16 @@ pub fn enum_const_value(input: proc_macro::TokenStream) -> proc_macro::TokenStre
                 let variant_name = variant.ident;
                 let tokens = match variant.fields {
                     Fields::Unit => quote! {},
-                    _ => {
+                    Fields::Unnamed(..) => {
                         generate_const_enum = true;
                         quote! {
-                            (_)
+                            (..)
+                        }
+                    }
+                    Fields::Named(..) => {
+                        generate_const_enum = true;
+                        quote! {
+                            {..}
                         }
                     }
                 };
