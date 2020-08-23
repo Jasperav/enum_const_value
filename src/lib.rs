@@ -70,7 +70,7 @@ pub fn enum_const_value(input: proc_macro::TokenStream) -> proc_macro::TokenStre
                     }
                 }
 
-                pub fn value(&self) -> i32 {
+                pub fn const_value(&self) -> i32 {
                     #const_enum_type_ident::value_for_variant(self)
                 }
             }
