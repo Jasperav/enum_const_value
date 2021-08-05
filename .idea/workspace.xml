@@ -5,7 +5,7 @@
   </component>
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" ENABLED="true" />
     </configurations>
   </component>
   <component name="CargoProjects">
@@ -15,6 +15,8 @@
   <component name="ChangeListManager">
     <list default="true" id="de2b5876-14f4-42da-9aae-997491410b6e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +47,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
@@ -60,11 +65,32 @@
       <recent name="C:\Users\javisser\CLionProjects\enum_fixed_value" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo Command.Test lib::test">
+  <component name="RunManager" selected="Cargo.Test lib::test">
+    <configuration name="Expand example [example]" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="expand --lib --color=always --theme=GitHub --tests" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/example" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Cargo Command.Expand example [example]" />
-      <item itemvalue="Cargo Command.Test lib::test" />
+      <item itemvalue="Cargo.Expand example [example]" />
+      <item itemvalue="Cargo.Test lib::test" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cargo.Expand example [example]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
@@ -85,44 +111,11 @@
       <workItem from="1597839490495" duration="1993000" />
       <workItem from="1597943090622" duration="1354000" />
       <workItem from="1598200297255" duration="505000" />
+      <workItem from="1628195798019" duration="226000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="414" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596797779246">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="414" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1280.693/0.0.1920.1160@0.0.1920.1160" timestamp="1596797779246" />
-    <state x="92" y="92" width="1736" height="976" key="DiffContextDialog" timestamp="1596797829989">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="92" y="92" width="1736" height="976" key="DiffContextDialog/-1920.0.1280.693/0.0.1920.1160@0.0.1920.1160" timestamp="1596797829989" />
-    <state width="1281" height="625" key="GridCell.Tab.0.bottom" timestamp="1597947575576">
-      <screen x="1920" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1921" height="1104" key="GridCell.Tab.0.bottom/-1920.0.1280.693/0.0.1920.1160@0.0.1920.1160" timestamp="1596797660984" />
-    <state width="1281" height="625" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1597947575576" />
-    <state width="1281" height="625" key="GridCell.Tab.0.center" timestamp="1597947575576">
-      <screen x="1920" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1921" height="1104" key="GridCell.Tab.0.center/-1920.0.1280.693/0.0.1920.1160@0.0.1920.1160" timestamp="1596797660984" />
-    <state width="1281" height="625" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1597947575576" />
-    <state width="1281" height="625" key="GridCell.Tab.0.left" timestamp="1597947575576">
-      <screen x="1920" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1921" height="1104" key="GridCell.Tab.0.left/-1920.0.1280.693/0.0.1920.1160@0.0.1920.1160" timestamp="1596797660984" />
-    <state width="1281" height="625" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1597947575576" />
-    <state width="1281" height="625" key="GridCell.Tab.0.right" timestamp="1597947575576">
-      <screen x="1920" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1921" height="1104" key="GridCell.Tab.0.right/-1920.0.1280.693/0.0.1920.1160@0.0.1920.1160" timestamp="1596797660984" />
-    <state width="1281" height="625" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1597947575576" />
-    <state x="667" y="313" width="585" height="592" key="find.popup" timestamp="1596797094152">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="667" y="313" width="585" height="592" key="find.popup/-1920.0.1280.693/0.0.1920.1160@0.0.1920.1160" timestamp="1596797094152" />
   </component>
 </project>
