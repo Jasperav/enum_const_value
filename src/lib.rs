@@ -30,7 +30,6 @@ pub fn enum_const_value(input: proc_macro::TokenStream) -> proc_macro::TokenStre
         .collect::<Vec<_>>();
 
     let (idents_and_matcher, original_matcher): (Vec<_>, Vec<_>) = enum_data
-        .clone()
         .into_iter()
         .enumerate()
         .map(|(index, variant)| {
