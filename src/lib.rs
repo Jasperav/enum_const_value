@@ -1,6 +1,6 @@
+use quote::format_ident;
 use quote::quote;
 use syn::{DeriveInput, Fields};
-use quote::format_ident;
 
 #[proc_macro_derive(EnumConstValue)]
 pub fn enum_const_value(input: proc_macro::TokenStream) -> proc_macro::TokenStream {
@@ -24,7 +24,7 @@ pub fn enum_const_value(input: proc_macro::TokenStream) -> proc_macro::TokenStre
                 },
                 Fields::Named(..) => quote! {
                     Self::#ident { .. } => stringify!(#ident)
-                }
+                },
             }
         })
         .collect::<Vec<_>>();
@@ -41,19 +41,19 @@ pub fn enum_const_value(input: proc_macro::TokenStream) -> proc_macro::TokenStre
                 Fields::Unnamed(..) => {
                     generate_const_enum = true;
                     quote! {
-                            (..)
-                        }
+                        (..)
+                    }
                 }
                 Fields::Named(..) => {
                     generate_const_enum = true;
                     quote! {
-                            {..}
-                        }
+                        {..}
+                    }
                 }
             };
 
             let original_enum_matcher = quote! {
-                &#original_enum_type_name::#variant_name#tokens => #index
+                &#original_enum_type_name::#variant_name #tokens => #index
             };
             let const_enum_matcher = quote! {
                 &#const_enum_type_ident::#variant_name => #index
