@@ -1,6 +1,6 @@
 use enum_const_value::EnumConstValue;
 
-#[derive(EnumConstValue)]
+#[derive(Debug, PartialEq, EnumConstValue)]
 enum PlainEnum {
     SomeCase,
     AnotherCase
@@ -34,6 +34,7 @@ mod test {
 
     #[test]
     fn test_my_enum() {
+        assert_eq!(PlainEnum::all_values(), [PlainEnum::SomeCase, PlainEnum::AnotherCase]);
         assert_eq!(0, PlainEnum::SomeCase.const_value());
         assert_eq!(1, PlainEnum::AnotherCase.const_value());
         assert_eq!("AnotherCase", PlainEnum::AnotherCase.retrieve_ident());

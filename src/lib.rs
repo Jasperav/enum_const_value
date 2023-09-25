@@ -28,7 +28,7 @@ pub fn enum_const_value(input: proc_macro::TokenStream) -> proc_macro::TokenStre
             }
         })
         .collect::<Vec<_>>();
-
+    let mut generate_all_values = !retrieve_ident.is_empty();
     let (idents_and_matcher, original_matcher): (Vec<_>, Vec<_>) = enum_data
         .into_iter()
         .enumerate()
@@ -36,15 +36,19 @@ pub fn enum_const_value(input: proc_macro::TokenStream) -> proc_macro::TokenStre
             let index = index as i32;
             let variant_name = variant.ident;
             let tokens = match variant.fields {
-                Fields::Unit => quote! {},
+                Fields::Unit => {
+                    quote! {}
+                },
                 Fields::Unnamed(..) => {
                     generate_const_enum = true;
+                    generate_all_values = false;
                     quote! {
                         (..)
                     }
                 }
                 Fields::Named(..) => {
                     generate_const_enum = true;
+                    generate_all_values = false;
                     quote! {
                         {..}
                     }
@@ -61,9 +65,25 @@ pub fn enum_const_value(input: proc_macro::TokenStream) -> proc_macro::TokenStre
             ((variant_name, const_enum_matcher), original_enum_matcher)
         })
         .unzip();
+
     let (variant_names, const_matcher): (Vec<_>, Vec<_>) = idents_and_matcher.into_iter().unzip();
+    let tokens_all_values = if generate_all_values {
+        let number = variant_names.len();
+        quote! {
+            pub fn all_values() -> [Self; #number] {
+                [
+                    #(Self::#variant_names),*
+                ]
+            }
+        }
+    } else {
+        quote! {}
+    };
+
     let mut tokens = quote! {
         impl #original_enum_type_name {
+            #tokens_all_values
+
             pub fn retrieve_ident(&self) -> &'static str {
                 match self {
                     #(#retrieve_ident),*
